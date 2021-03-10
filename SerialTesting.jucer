@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<JUCERPROJECT id="Rs78yy" name="SerialTesting" projectType="audioplug" useAppConfig="0"
+              addUsingNamespaceToJuceHeader="1" displaySplashScreen="1" jucerFormatVersion="1">
+  <MAINGROUP id="MUsEel" name="SerialTesting">
+    <GROUP id="{731109CC-8F2F-B76E-8463-B693DD2D8301}" name="Source">
+      <FILE id="gtdd3m" name="PluginProcessor.cpp" compile="1" resource="0"
+            file="Source/PluginProcessor.cpp"/>
+      <FILE id="lXalaK" name="PluginProcessor.h" compile="0" resource="0"
+            file="Source/PluginProcessor.h"/>
+      <FILE id="h95gVg" name="PluginEditor.cpp" compile="1" resource="0"
+            file="Source/PluginEditor.cpp"/>
+      <FILE id="dSNuWy" name="PluginEditor.h" compile="0" resource="0" file="Source/PluginEditor.h"/>
+      <FILE id="VIgtPi" name="Accelerometer.cpp" compile="1" resource="0"
+            file="Source/Accelerometer.cpp"/>
+      <FILE id="JBYBic" name="Accelerometer.h" compile="0" resource="0" file="Source/Accelerometer.h"/>
+      <FILE id="Vy7Kls" name="DistanceMeter.cpp" compile="1" resource="0"
+            file="Source/DistanceMeter.cpp"/>
+      <FILE id="v0NwiA" name="DistanceMeter.h" compile="0" resource="0" file="Source/DistanceMeter.h"/>
+      <FILE id="K5XWFi" name="TouchScreen.cpp" compile="1" resource="0" file="Source/TouchScreen.cpp"/>
+      <FILE id="gTi6gd" name="TouchScreen.h" compile="0" resource="0" file="Source/TouchScreen.h"/>
+      <GROUP id="{07BCDA81-9CB6-5A6C-4450-DCF491BFFC22}" name="juce_serialport">
+        <GROUP id="{16FB1C64-945E-7A0D-2A7E-A0D8EAA36905}" name="com">
+          <GROUP id="{879E8684-22FA-AA66-616A-1FE794C87A1A}" name="artiphon">
+            <GROUP id="{3F521DC7-9326-2F1D-747F-41ACF3B33DE9}" name="juce_serial">
+              <FILE id="BJvYEf" name="UsbSerialHelper.java" compile="0" resource="1"
+                    file="Source/juce_serialport/com/artiphon/juce_serial/UsbSerialHelper.java"/>
+            </GROUP>
+          </GROUP>
+        </GROUP>
+        <GROUP id="{E62BB8FB-7D2F-B403-3260-F3682B0E6ED0}" name="submodules">
+          <GROUP id="{B4566A50-F109-FB65-A8A2-2F9A0C61B6A8}" name="usb-serial-for-android"/>
+        </GROUP>
+        <FILE id="sJnGlP" name="juce_serialport.h" compile="0" resource="0"
+              file="Source/juce_serialport/juce_serialport.h"/>
+        <FILE id="ExpNWq" name="juce_serialport_Android.cpp" compile="1" resource="0"
+              file="Source/juce_serialport/juce_serialport_Android.cpp"/>
+        <FILE id="uoKn40" name="juce_serialport_iOS.cpp" compile="1" resource="0"
+              file="Source/juce_serialport/juce_serialport_iOS.cpp"/>
+        <FILE id="Pdr0o5" name="juce_serialport_Linux.cpp" compile="1" resource="0"
+              file="Source/juce_serialport/juce_serialport_Linux.cpp"/>
+        <FILE id="Rpw3h4" name="juce_serialport_OSX.cpp" compile="1" resource="0"
+              file="Source/juce_serialport/juce_serialport_OSX.cpp"/>
+        <FILE id="UnaZmU" name="juce_serialport_Windows.cpp" compile="1" resource="0"
+              file="Source/juce_serialport/juce_serialport_Windows.cpp"/>
+        <FILE id="laC4jQ" name="README.md" compile="0" resource="1" file="Source/juce_serialport/README.md"/>
+      </GROUP>
+    </GROUP>
+  </MAINGROUP>
+  <JUCEOPTIONS JUCE_STRICT_REFCOUNTEDPOINTER="1" JUCE_VST3_CAN_REPLACE_VST2="0"/>
+  <EXPORTFORMATS>
+    <XCODE_MAC targetFolder="Builds/MacOSX">
+      <CONFIGURATIONS>
+        <CONFIGURATION isDebug="1" name="Debug" targetName="SerialTesting"/>
+        <CONFIGURATION isDebug="0" name="Release" targetName="SerialTesting"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_audio_basics" path="../../modules"/>
+        <MODULEPATH id="juce_audio_devices" path="../../modules"/>
+        <MODULEPATH id="juce_audio_formats" path="../../modules"/>
+        <MODULEPATH id="juce_audio_plugin_client" path="../../modules"/>
+        <MODULEPATH id="juce_audio_processors" path="../../modules"/>
+        <MODULEPATH id="juce_audio_utils" path="../../modules"/>
+        <MODULEPATH id="juce_core" path="../../modules"/>
+        <MODULEPATH id="juce_data_structures" path="../../modules"/>
+        <MODULEPATH id="juce_events" path="../../modules"/>
+        <MODULEPATH id="juce_graphics" path="../../modules"/>
+        <MODULEPATH id="juce_gui_basics" path="../../modules"/>
+        <MODULEPATH id="juce_gui_extra" path="../../modules"/>
+      </MODULEPATHS>
+    </XCODE_MAC>
+  </EXPORTFORMATS>
+  <MODULES>
+    <MODULE id="juce_audio_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_devices" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_formats" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_plugin_client" showAllCode="1" useLocalCopy="0"
+            useGlobalPath="1"/>
+    <MODULE id="juce_audio_processors" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_utils" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_core" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_data_structures" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_events" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_graphics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_extra" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+  </MODULES>
+  <LIVE_SETTINGS>
+    <OSX/>
+  </LIVE_SETTINGS>
+</JUCERPROJECT>
